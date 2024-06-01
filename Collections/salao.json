@@ -1,0 +1,71 @@
+{
+    "usuario": {
+        "type": "object",
+        "properties": {
+            "nome": {
+                "type": "string",
+                "required": true
+            },
+            "foto": {
+                "type": "string"
+            },
+            "capa": {
+                "type": "string"
+            },
+            "email": {
+                "type": "string",
+                "required": true,
+                "unique": true
+            },
+            "senha": {
+                "type": "string",
+                "required": true,
+                "default": null
+            },
+            "confirmarSenha": {
+                "type": "string",
+                "required": true,
+                "default": null
+            },
+            "telefone": {
+                "type": "string",
+                "required": true
+            },
+            "endereco": {
+                "type": "object",
+                "properties": {
+                    "cep": {
+                        "type": "string"
+                    },
+                    "numero": {
+                        "type": "string"
+                    },
+                    "cidade": {
+                        "type": "string"
+                    },
+                    "uf": {
+                        "type": "string"
+                    },
+                    "pais": {
+                        "type": "string"
+                    }
+                }
+            },
+            "geo": {
+                "type": "object",
+                "properties": {
+                    "tipo": {
+                        "type": "string"
+                    },
+                    "coordinates": {
+                        "type": "array"
+                    }
+                }
+            },
+            "dataCadastro": {
+                "type": "date",
+                "default": "Date.now"
+            }
+        }
+    }
+}

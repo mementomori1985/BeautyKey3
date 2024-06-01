@@ -1,0 +1,23 @@
+{
+"nome": "Alex Cardoso",
+"foto": "",
+"dataNascimento": "01/01/1989",
+"sexo": "masculino",
+"genero": "cisgênero",
+"status": "ativo",
+"email": "alexcardoso@gmail.com",
+"senha": "Alex$124",
+"confirmarSenha": "Alex$124",
+"telefone": 11977778888,
+"documento": {
+        "tipo": "RG",
+        "numero": "411111119"
+    },
+"endereco": {
+        "cep": "0868140",
+        "numero": "2500",
+        "cidade": "Poá",
+        "uf": "São Paulo",
+        "pais": "Brasil"
+    }
+}

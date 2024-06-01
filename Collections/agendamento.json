@@ -1,0 +1,49 @@
+{
+    "agendamento": {
+        "type": "object",
+        "properties": {
+            "salaoId": {
+                "type": "objectId",
+                "ref": "Salao",
+                "required": true
+            },
+            "clienteId": {
+                "type": "objectId",
+                "ref": "Cliente",
+                "required": true
+            },
+            "servicoId": {
+                "type": "objectId",
+                "ref": "Servico",
+                "required": true
+            },
+            "colaboradorId": {
+                "type": "objectId",
+                "ref": "Colaborador",
+                "required": true
+            },
+            "dataAgendamento": {
+                "type": "date",
+                "default": "Date.now"
+            },
+            "comissao": {
+                "type": "number",
+                "required": true,
+                "get": "formatPercentage"
+            },
+            "valor": {
+                "type": "number",
+                "required": true,
+                "get": "formatCurrency"
+            },
+            "transactionId": {
+                "type": "string",
+                "required": true
+            },
+            "dataCadastro": {
+                "type": "date",
+                "default": "Date.now"
+            }
+        }
+    }
+}

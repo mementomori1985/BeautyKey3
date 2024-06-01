@@ -1,0 +1,21 @@
+{
+    "nome": "Fabio Neves",
+    "foto": "",
+    "dataNascimento": "18/08/1970",
+    "sexo": "masculino",
+    "genero": "cisgênero",
+    "status": "ativo",
+    "email": "fabiounhas@hotmail.com",
+    "senha": "FNS!123",
+    "confirmarSenha": "FNS!123",
+    "telefone": "11977774444",
+    "contaBancaria": {
+            "titular": "Fabio Neves",
+            "banco": "001 - Banco do Brasil",
+            "cpfCNPJ": "12378945612",
+            "tipo": "poupança",
+            "agencia": "7034-9",
+            "numero": "11111-1",
+            "dv": "087"
+        }
+}

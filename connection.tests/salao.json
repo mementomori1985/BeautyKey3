@@ -1,0 +1,16 @@
+{
+"nome": "Studio Mah",
+ "foto": "",
+ "capa": "",
+ "email": "studiomah@studiomah.com.br",
+"senha": "Mah@125",
+"confirmarSenha": "Mah@125",
+"telefone": "11914441555",
+"endereco": {
+    "cep": "08161-530",
+    "numero":"250",
+    "cidade": "São Paulo", 
+    "uf":"SP",
+    "pais": "Brasil"
+}
+}

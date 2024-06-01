@@ -1,0 +1,49 @@
+{
+    "agenda": {
+        "type": "object",
+        "properties": {
+            "salaoId": {
+                "type": "objectId",
+                "ref": "Salao",
+                "required": true
+            },
+            "especialidades": {
+                "type": "array",
+                "items": {
+                    "type": "objectId",
+                    "ref": "Servico",
+                    "required": true
+                },
+                "required": true
+            },
+            "colaboradores": {
+                "type": "array",
+                "items": {
+                    "type": "objectId",
+                    "ref": "Colaborador",
+                    "required": true
+                },
+                "required": true
+            },
+            "dias": {
+                "type": "array",
+                "items": {
+                    "type": "number"
+                },
+                "required": true
+            },
+            "inicio": {
+                "type": "date",
+                "required": true
+            },
+            "fim": {
+                "type": "date",
+                "required": true
+            },
+            "dataCadastro": {
+                "type": "date",
+                "default": "Date.now"
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "servico": {
+        "type": "object",
+        "properties": {
+            "salaoId": {
+                "type": "objectId",
+                "ref": "Salao"
+            },
+            "titulo": {
+                "type": "string",
+                "required": true
+            },
+            "preco": {
+                "type": "number",
+                "required": true,
+                "get": "formatCurrency"
+            },
+            "duracaoEstimada": {
+                "type": "number",
+                "required": true
+            },
+            "comissao": {
+                "type": "number",
+                "required": true,
+                "get": "formatPercentage"
+            },
+            "recorrencia": {
+                "type": "number",
+                "required": true
+            },
+            "descricao": {
+                "type": "string"
+            },
+            "status": {
+                "type": "string",
+                "enum": ["ativo", "inativo", "não disponível"],
+                "required": true,
+                "default": "ativo"
+            },
+            "dataCadastro": {
+                "type": "date",
+                "default": "Date.now"
+            }
+        }
+    }
+}

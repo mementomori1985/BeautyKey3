@@ -1,0 +1,97 @@
+{
+    "usuario": {
+        "type": "object",
+        "properties": {
+            "nome": {
+                "type": "string",
+                "required": true
+            },
+            "foto": {
+                "type": "string",
+                "required": true
+            },
+            "dataNascimento": {
+                "type": "string",
+              "required": true
+            },
+            "sexo": {
+                "type": "string",
+                "enum": ["masculino", "feminino"],
+                "required": true
+            },
+            "genero": {
+                "type": "string",
+                "enum": ["cisgênero", "transgênero", "Não Binário", "Outro"]
+            },
+            "status": {
+                "type": "string",
+                "enum": ["ativo", "inativo"],
+                "default": "ativo"
+            },
+            "email": {
+                "type": "string",
+                "required": true,
+                "unique": true
+            },
+            "senha": {
+                "type": "string",
+                "required": true,
+                "default": null
+            },
+            "confirmarSenha": {
+                "type": "string",
+                "required": true,
+                "default": null
+            },
+            "telefone": {
+                "type": "string",
+                "required": true
+            },
+            "contaBancaria": {
+                "type": "object",
+                "properties": {
+                    "titular": {
+                        "type": "string",
+                        "required": true
+                    },
+                    "banco": {
+                        "type": "string",
+                        "required": true
+                    },
+                    "cpfCNPJ": {
+                        "type": "string",
+                        "required": true,
+                        "validate": {
+                            "validator": "isValidCPFOrCNPJ",
+                            "message": "CPF/CNPJ inválido"
+                        }
+                    },
+                    "tipo": {
+                        "type": "string",
+                        "required": true
+                    },
+                    "agencia": {
+                        "type": "string",
+                        "required": true
+                    },
+                    "numero": {
+                        "type": "string",
+                        "required": true
+                    },
+                    "dv": {
+                        "type": "string",
+                        "required": true
+                    }
+                }
+            },
+            "dataCadastro": {
+                "type": "date",
+                "default": "Date.now"
+            },
+            "requirementId": {
+                "type": "string",
+                "required": true
+            }
+        }
+    }
+}

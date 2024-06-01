@@ -1,0 +1,94 @@
+{
+    "usuario": {
+        "type": "object",
+        "properties": {
+            "nome": {
+                "type": "string",
+                "required": true
+            },
+            "foto": {
+                "type": "string",
+                "required": true
+            },
+            "dataNascimento": {
+                "type": "string",
+                "required": true
+            },
+            "sexo": {
+                "type": "string",
+                "enum": ["masculino", "feminino"],
+                "required": true
+            },
+            "genero": {
+                "type": "string",
+                "enum": ["cisgênero", "transgênero", "Não binário", "Outro"]
+            },
+            "status": {
+                "type": "string",
+                "enum": ["ativo", "inativo"],
+                "default": "ativo"
+            },
+            "email": {
+                "type": "string",
+                "required": true,
+                "unique": true
+            },
+            "senha": {
+                "type": "string",
+                "required": true,
+                "default": null
+            },
+            "confirmarSenha": {
+                "type": "string",
+                "required": true,
+                "default": null
+            },
+            "telefone": {
+                "type": "string",
+                "required": true
+            },
+            "documento": {
+                "type": "object",
+                "properties": {
+                    "tipo": {
+                        "type": "string",
+                        "required": true,
+                        "enum": ["individual", "corporation"]
+                    },
+                    "numero": {
+                        "type": "string",
+                        "required": true
+                    }
+                }
+            },
+            "endereco": {
+                "type": "object",
+                "properties": {
+                    "cep": {
+                        "type": "string"
+                    },
+                    "numero": {
+                        "type": "string"
+                    },
+                    "cidade": {
+                        "type": "string"
+                    },
+                    "uf": {
+                        "type": "string"
+                    },
+                    "pais": {
+                        "type": "string"
+                    }
+                }
+            },
+            "dataCadastro": {
+                "type": "date",
+                "default": "Date.now"
+            },
+            "customerId": {
+                "type": "string",
+                "required": true
+            }
+        }
+    }
+}

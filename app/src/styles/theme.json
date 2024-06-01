@@ -1,0 +1,29 @@
+{
+  "colors": {
+    "raisin-black": "hsla(220, 4%, 16%, 1)",
+    "gold": "hsla(51, 100%, 50%, 1)",
+    "mustard": "hsla(47, 100%, 67%, 1)",
+    "arylide-yellow": "hsla(47, 80%, 67%, 1)",
+    "jasmine": "hsla(50, 100%, 77%, 1)",
+    "ghost-white": "hsla(235, 31%, 93%, 1)",
+    "ivory": "hsla(60, 100%, 98%, 1)"
+  },
+  "fonts": {
+    "regular": {
+      "fontFamily": "Ubuntu-Regular",
+      "fontWeight": "normal"
+    },
+    "medium": {
+      "fontFamily": "Ubuntu-Medium",
+      "fontWeight": "normal"
+    },
+    "light": {
+      "fontFamily": "Ubuntu-Light",
+      "fontWeight": "normal"
+    },
+    "bold": {
+      "fontFamily": "Ubuntu-Bold",
+      "fontWeight": "normal"
+    }
+  }
+}
