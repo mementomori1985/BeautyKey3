@@ -1,12 +1,4 @@
 # BeautyKey3
-Projeto TCC Fatec Ferraz
-Projetado por Alex Cardoso, Marisa Durval Oleksinski e Fabio Neves
-
-Este projeto de trata de uma reprodução de um aplicativo de agendamento para salões de beleza que possui dois módulos: uma interface web para salões e uma interface mobile para clientes.
-
-A inspiração para o projeto veio do projeto 'Salão na Mão' de Silvio Sampaio.
-
-O projeto utiliza o framework React, React Native, Node e també utiliza o MongoDB para o banco não-relacional.
 
 Primeiramente, é necessário entender que o projeto é composto por 05 pastas-raizes até o momento:
  
