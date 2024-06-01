@@ -3,17 +3,17 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android-build": "export JAVA_HOME=`/usr/libexec/java_home -v 1.8` && cd android && ./gradlew bundleRelease",
-    "android-build-apk": "export JAVA_HOME=`/usr/libexec/java_home -v 1.8` && cd android && ./gradlew assembleRelease",
-    "android": "export JAVA_HOME=`/usr/libexec/java_home -v 1.8` && adb reverse tcp:8081 tcp:8081 && adb reverse tcp:9090 tcp:9090 && adb reverse tcp:8000 tcp:8000 && react-native run-android",
-    "ios": "react-native run-ios --device='iPhone de Silvio'",
+    "android-build": "cross-env JAVA_HOME=`/usr/libexec/java_home -v 1.8` && cd android && ./gradlew bundleRelease",
+    "android-build-apk": "cross-env JAVA_HOME=`/usr/libexec/java_home -v 1.8` && cd android && ./gradlew assembleRelease",
+    "android": "cross-env JAVA_HOME=`/usr/libexec/java_home -v 1.8` && adb reverse tcp:8081 tcp:8081 && adb reverse tcp:9090 tcp:9090 && adb reverse tcp:8000 tcp:8000 && react-native run-android",
+    "ios": "react-native run-ios --device='iPhone de Marisa'",
     "ios11": "react-native run-ios",
-    "androidclean": "export JAVA_HOME=`/usr/libexec/java_home -v 1.8` && cd android && ./gradlew clean",
+    "androidclean": "cross-env JAVA_HOME=`/usr/libexec/java_home -v 1.8` && cd android && ./gradlew clean",
     "ios6s": "react-native run-ios --simulator='iPhone 6s'",
     "ios6sPlus": "react-native run-ios --simulator='iPhone 6s Plus'",
     "iosSmall": "react-native run-ios --simulator='iPhone 5s'",
     "pod": "cd ios && pod install",
-    "start": "export JAVA_HOME=`/usr/libexec/java_home -v 1.8` && adb reverse tcp:8081 tcp:8081 && adb reverse tcp:9090 tcp:9090 && adb reverse tcp:8000 tcp:8000 && react-native start --reset-cache",
+    "start": "cross-env-shell \"JAVA_HOME=`/usr/libexec/java_home -v 1.8` && adb reverse tcp:8081 tcp:8081 && adb reverse tcp:9090 tcp:9090 && adb reverse tcp:8000 tcp:8000 && react-native start --reset-cache\"",
     "test": "jest"
   },
   "dependencies": {
@@ -25,6 +25,7 @@
     "axios": "^0.21.1",
     "immer": "^9.0.2",
     "moment": "^2.29.1",
+    "node-modules": "^1.0.1",
     "patch-package": "^6.4.7",
     "postinstall-postinstall": "^2.1.0",
     "react": "16.13.1",
@@ -65,3 +66,4 @@
     "preset": "react-native"
   }
 }
+
